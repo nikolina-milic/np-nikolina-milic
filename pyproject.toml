@@ -1,0 +1,16 @@
+[project]
+name = "np-nikolina-milic"
+version = "0.1.0"
+description = "Vježba iz Naprednog programiranja"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
